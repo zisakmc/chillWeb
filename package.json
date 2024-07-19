@@ -12,6 +12,7 @@
     "howler": "^2.2.4",
     "vue": "^3.4.29",
     "vue-audio-visual": "^3.0.8",
+    "vue-dynamic-island-player": "^1.2.3",
     "vue-router": "^4.4.0"
   },
   "devDependencies": {

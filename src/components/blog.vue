@@ -4,7 +4,7 @@ import blogcard from "./layoutCom/blogcard.vue";
 
 <template>
   <div
-    class="flex flex-col justify-center items-center px-2 h-auto w-auto bg-blog-image"
+    class="flex flex-col justify-center items-center px-2 h-auto w-auto bg-bg-image"
   >
     <blogcard />
     <blogcard />

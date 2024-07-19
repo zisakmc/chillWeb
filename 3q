@@ -12,22 +12,9 @@ const playList = ref([
     // howler instance
     howl: null,
     // song of author
-    author: "Gibli studio",
+    author: "Cherrystones",
     // song of cover
-    cover: "/kiki2.jpg",
-  },
-  {
-    // song of title
-    title: "Zero Gravity",
-    // sound file
-    file: "/zerogravity.mp3",
-    // howler instance
-    howl: null,
-    // song of author
-    author: "quiet.b studio",
-
-    // song of cover
-    cover: "/zerogra.jpg",
+    cover: "/makima.jpg",
   },
 ]);
 
@@ -35,12 +22,18 @@ const player = ref();
 </script>
 <template>
   <div class="flex justify-center items-center">
-    <div class="px-5">
-      <DynamicIslandPlayer
-        :play-list="playList"
-        :html5="true"
-        theme="#11502a"
-      />
+    <div
+      class="mt-10 lg:mt-0 flex flex-col gap-4 justify-center items-center h-auto w-[20vh] p-2 rounded-md"
+    >
+      <div class="flex justify-center items-center">
+        <img
+          class="aspect-square object-cover h-40 lg:h-50 rounded-md"
+          src="/makima.jpg"
+        />
+      </div>
+      <div>
+        <DynamicIslandPlayer ref="player" :play-list="playList" />
+      </div>
     </div>
   </div>
 </template>

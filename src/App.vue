@@ -1,6 +1,7 @@
 <script setup>
 import home from "./components/home.vue";
 import { RouterLink, RouterView } from "vue-router";
+import player from "./components/layoutCom/player.vue";
 </script>
 
 <template>
@@ -82,6 +83,9 @@ import { RouterLink, RouterView } from "vue-router";
           <p class="capitalize">About</p>
         </div>
       </RouterLink>
+      <div class="fixed top-10 left-5 mt-4">
+        <player />
+      </div>
     </nav>
   </div>
   <RouterView />
